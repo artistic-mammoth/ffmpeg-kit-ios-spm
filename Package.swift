@@ -29,6 +29,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ffmpeg-kit-ios-spm")
+            name: "ffmpeg-kit-ios-spm",
+            dependencies: frameworks.map { .byName(name: $0.key) })
     ] + frameworks.map { xcframework($0) }
 )
