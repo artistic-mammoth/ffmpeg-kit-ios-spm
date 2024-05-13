@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let release = "min.v6.0.0"
+let release = "v6.0.0"
 
 let frameworks = ["ffmpegkit": "f0adddd6f65c866156930a3164756864acc6a1b7cfeaa63e3cd5ec6604e09627",
                   "libavcodec": "a522866cf17d27558d4a6e56e893d1a8847292e09475c5ada59d28c81d408c0f",
