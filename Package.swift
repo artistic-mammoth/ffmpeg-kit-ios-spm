@@ -3,16 +3,16 @@
 
 import PackageDescription
 
-let release = "v6.0.0"
+let release = "v6.0.mingpl"
 
-let frameworks = ["ffmpegkit": "f0adddd6f65c866156930a3164756864acc6a1b7cfeaa63e3cd5ec6604e09627",
-                  "libavcodec": "a522866cf17d27558d4a6e56e893d1a8847292e09475c5ada59d28c81d408c0f",
-                  "libavdevice": "9a5f91d1dbeff07cae1b10776e47dab36c65f5cb23dffd99dc43c7098faa89c1",
-                  "libavfilter": "a4ab9b45fd1d3241b577a4924d19161607bf5c221cdaaabea94742afb0d59205",
-                  "libavformat": "28ab1d356264314a3dba9d615f6adef0b0f7c950ee86c0cadf93ae16eaaccaf5",
-                  "libavutil": "7b626f1903564c88aa58af4be814d5a25ec509651ced73e5329b01354bc1f5b6",
-                  "libswresample": "65558dbacc653cc10eaf05aeb8a9078061e80a3fbdec876c60486a2039e935fc",
-                  "libswscale": "91973da622f157d0d63aefecf08f07c91148aeb4ac738bb627dd6430703999eb"]
+let frameworks = ["ffmpegkit": "0f209b25450c129d17a44de157aa73e349c651d3ddd105691a9ffedea53137c9",
+                  "libavcodec": "9d35c9787aaf13c070854349e98279c46e672f19f6f5bcbf7f3dae8854acf854",
+                  "libavdevice": "c269e0d222d23a73e18aeea511cb02ff052cf23850ab1555a66bc5acb8aecc26",
+                  "libavfilter": "9a9bd8b47c29d0897d6559f7a0a5fdbfb0d75acb6c226ed8e1cb491ad20e52ac",
+                  "libavformat": "131c734fb8a3502db7961e16c6f020650a143182bc0e72e8ac0cb8fbb1442786",
+                  "libavutil": "f8bc692dc21a94ab6c95b305941464f1891c4b3e71142d079bec3075cdf1be9a",
+                  "libswresample": "ed3f8903903794b2f74555d17f243d7b6036b870da4a589f2b167a2670fb0155",
+                  "libswscale": "7e2fb1056befb1a1e5ee2d4c2295b219de8db67d02f95975a3244f7192037a98"]
 
 func xcframework(_ package: Dictionary<String, String>.Element) -> Target {
     let url = "https://github.com/artistic-mammoth/ffmpeg-kit-ios-spm/releases/download/\(release)/\(package.key).xcframework.zip"
