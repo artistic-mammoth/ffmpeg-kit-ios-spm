@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let release = "v6.0.mingpl"
+let release = "v6.0.1"
 
 let frameworks = ["ffmpegkit": "0f209b25450c129d17a44de157aa73e349c651d3ddd105691a9ffedea53137c9",
                   "libavcodec": "9d35c9787aaf13c070854349e98279c46e672f19f6f5bcbf7f3dae8854acf854",
